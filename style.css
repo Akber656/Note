@@ -1,0 +1,331 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+
+}
+
+.display{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-columns: 24% auto;
+  height: 100vh;
+}
+
+/* menu{
+  background-color:rgb(10, 10, 50);
+  color: white;
+
+} */
+
+.left{
+  display: flex;
+  flex-direction: column;
+  background-color:rgb(7, 7, 29);
+  color: white;  
+}
+
+.left img{
+  height: 3rem; 
+  /* margin: 0rem 1rem 4rem 0.4rem; */
+}
+
+.left .top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9.8vh;
+  padding: 0.8rem;
+  /* margin-top: 0.5rem; */
+}
+.left .top h1{
+    font-size: 1.7rem;
+    /* margin-right: 2rem; */
+}
+
+.line{
+  height: 2px;
+  width: 21.3rem;
+  background: white;
+  /* margin-top: -0.5rem; */
+}
+
+.notelist{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+} 
+
+.note{
+  background: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem;
+  border: 1px solid black;
+  border-radius: 16px;
+  margin: 0.8rem;
+  cursor: pointer;
+}
+
+h2{
+  color: #0097A7;
+}
+
+.newnote{
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.newnotebutton{
+  bottom: 5%;
+  position: absolute;
+  border: none;
+  padding: 1.1rem 3.1rem;
+  font-weight: bold;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  /* margin-left: 5rem; */
+}
+
+.right{
+  position: relative;
+  background: #091152;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right img{
+  height: 28rem;
+  
+}
+
+.right .one{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+}
+
+h3{
+  text-transform: uppercase;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+}
+
+h6{
+  text-transform: uppercase;
+  padding: 0.8rem;
+  font-size: 0.8em;
+}
+
+
+.createNote{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.writeNote{
+  background: #fff;
+  width: 30vw;
+  height: 50vh;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+input , textarea{
+  position: relative;
+  display: block;
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 1.6px solid black;
+  width: 25vw;
+  /* text-align: center; */
+  outline: none;
+  font-size: 1rem;
+}
+
+.createNoteButton{
+  padding: 0.8rem 2.5rem;
+  margin: 1rem;
+  margin-top: 1rem;
+  background: #fff;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 16px;
+}
+
+.noteDisplay{
+  position: absolute;
+  background: #fff;
+  width: 76vw;
+  height: 10vh;
+  top: 0%;
+}
+
+
+
+.titleDisplay h3{
+  color: #3949AB;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.noteTop{
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.topLeft h2{
+  color: #091152;
+  font-size: 1.5rem;
+  margin-left: 1.2rem;
+  text-transform: uppercase;
+}
+
+/*  */
+
+.noteTop button{
+  color: #fff;
+  padding: 0.6rem 2rem;
+  margin: 0.8rem;
+  border-radius: 16px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.1rem;
+  
+}
+
+.newtask{
+  background: #00695C; 
+}
+
+.deletenote{
+  background: #E53935;
+}
+
+.noteBody{
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  height: 72vh;
+  width: 50vw;
+  margin: 2rem; 
+  margin-left: 10rem; 
+  overflow-x: hidden;
+  padding: 1rem 2rem;
+}
+
+h1{
+  text-align: center;
+}
+
+#header{
+  margin: 0 0 0 2rem;
+  padding-top: 1rem;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: black;
+}
+
+.taskone{
+  display: flex;
+  width: 10vw;
+  margin: 1rem;
+}
+
+.check{
+  display: none;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+  
+li{
+  list-style: none;
+  display: flex;
+  /* align-items: start; */
+  justify-content: start;
+  margin-top: 1rem;
+  width: 100vw;
+}
+  
+.addnewtask{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.inputdiv{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+  border-radius: 20px;
+  border: 1px solid #37474F;
+}
+
+
+.inputdiv input{
+  padding: 0.8rem;
+  border-bottom: 1px solid black;
+}
+
+.Createtask{
+  padding: 0.8rem 2.5rem;
+  margin: 1rem;
+  margin-top: 1rem;
+  background: green;
+  color: white;
+  border: none;
+  font-size: 0.7rem;
+  border-radius: 16px;
+}
+
+
+
+
+#checkbox{
+  width: 2vw;
+  margin: 0 1rem;
+}
+
+
+button{
+  cursor: pointer;
+  border: none;
+}
+
+#checkbox[type="checkbox"]:before{
+    background-color: green;
+}

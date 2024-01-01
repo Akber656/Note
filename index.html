@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Land</title>
+    
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="display">
+    <section class="left">
+        <div class="top">
+            <img id="icon" src="./icon.png" alt="">
+            <h1>Note Land</h1>
+        </div>
+        <div class="line"></div>
+        <div class="bottom">
+          <div class="notelist" id="notelist">
+            
+          </div>
+            <div class="newnote">
+             <button class="newnotebutton">New Note</button>
+            </div>
+          
+    </section>
+    <!-- part 1 -->
+
+    <section class="right">   
+        <div class="checknotes" >   
+          <img src="./back.png" alt="">
+            <div class="one">
+               <h3><span class="notes-found"> No </span> Note Found </h3>
+               <h6>add some notes form the left column</h6>
+            </div>
+        </div>
+    <!-- part 2 -->
+
+      <div class="createNote">
+        <div class="writeNote">
+            <input placeholder="Note Title" type="text" class="createNoteTitle" id="createNoteTitle">
+            <textarea placeholder="Note Description " name="" id="createNoteContent" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <button id="createNoteButton" class="createNoteButton">Create Note</button>
+   
+    <!-- part 3 -->
+
+    <div class="noteDisplay">  
+        <div class="titleDisplay">  
+            <!-- <h3 id="noteonemain" class="noteonemain"></h3> -->
+                <div class="noteTop">  
+                    <div class="topLeft">
+                        <h2>Note One</h2>
+                    </div>
+                    <div class="noteButton">
+                       <button class="newtask"> New Task</button>
+                       <button class="deletenote">Delete Note</button>
+                    </div>
+                </div>
+        </div>
+             
+        <div class="noteBody">
+            <div class="notebodyone">
+                <p id="header"></p>
+            </div>
+             <h1>Task List</h1>
+             <hr>
+             <ul class="task">   
+                <li class="taskone">  
+                    <input type="checkbox" name="" id="checkbox" class="check">
+                    <label id="checkboxname"></label>
+                </li>
+             </ul>
+        </div>
+    </div>
+    <!-- part 4 -->
+
+    <div class="addnewtask">
+        <div class="inputdiv">
+            <input class="ainput" type="text" name="" placeholder="Task Name">
+        </div>
+        <button class="Createtask">CREATE TASK</button>
+    </div>
+    </section>
+</div>
+</div>
+</body>
+<script type="module" src="./main.js"></script>
+</html>
+
+
